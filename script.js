@@ -2,7 +2,7 @@
 const discoverButton = document
   .getElementById('discover-btn')
   .addEventListener('click', function () {
-    window.location.href = '/Blog.html';
+    window.location.href = '/blog.html';
   });
 // Complete Button Task
 let minusCount = 6;
