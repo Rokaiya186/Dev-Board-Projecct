@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Board Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+ <!-- Navbar Section -->
+<body class="px-10">
+
+   <header>
+    <div class="flex justify-between w-full pt-5 ">
+      <div class="flex pl-1">
+        <img class="w-8" src="assets/logo.png" alt="">
+        <p class="font-medium text-2xl">Dev<span class="font-extrabold text-2xl">Board</span></p>
+      </div>
+      <div class="flex">
+      <div class="flex border-solidw-15 justify-center pr-5 pt-2">
+        <img class="w-5 h-6" src="assets/checkbox.png" alt="">
+        <p id="plus-count" class="pl-3">23</p>
+      </div>
+      <!-- Rainbow Button -->
+       <div>
+        <img onclick="changeBackground()" id="changeColorImg" src="assets/theme-btn.png" alt="">
+       </div>
+    </div>
+     </div>
+   </header>
+<div class="flex">
+ <!--Main Section -->
+
+<div>
+  <div>
+    <div class="flex">
+      <!-- Main Heading Section -->
+    <div>
+      <div class="flex">
+
+        <!-- Task Assigned -->
+       <div class="flex pt-5">
+         <div class="flex pt-4"></div>
+           <div><img class="pt-4 pr-1" src="assets/checkbox.png" alt=""></div>
+           <div>
+             <p>Task Assigned</p>
+             <p id="minus-count" class="font-bold text-2xl">06</p>
+           </div>
+
+       </div>
+       <!-- Discover Something New -->
+       <div id="discover-btn" class="flex bg-linear-65 from-purple-500 to-pink-500 w-4/12 ml-15 mt-4">
+         <div><img src="assets/board.png" alt=""></div>
+         <div class="text-white pt-3 pl-2"><p>Discover Something New Today!</p></div>
+       </div>
+       <!-- Date Section -->
+       <div class="flex ml-15 mt-4">
+         <div"><img class="mr-2 mt-5" src="assets/calender.png" alt=""></div>
+         <div class="mt-6 ml-2">
+           <p>Wed,</p>
+           <p class="font-bold">Jul 28 2025</p>
+         </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Card Container -->
+    <div>
+      <div class="flex">
+        <!-- First Row Section -->
+        <div class="mr-8 mt-12">
+          <p class="btn btn-neutral btn-outline">ShopEase</p>
+          <h1 class="mt-3">Fix Mobile Button Issue </h1>
+          <p class="mt-3">Debug using Chrome <br> DevTools, check for <br> overlapping elements</p>
+          <div class="flex mt-3">
+            <div class="mr-4">
+              <p>Deadline</p>
+            <p>21 March 2025</p>
+            </div>
+            <div>
+              <button class="btn btn-active btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="mr-8 mt-12">
+          <p class="btn btn-neutral btn-outline">CloudSync</p>
+          <h1 class="mt-3">Add Dark Mode</h1>
+          <p class="mt-3">Debug using Chrome <br> DevTools, check for <br> overlapping elements</p>
+          <div class="flex mt-3">
+            <div class="mr-4">
+              <p>Deadline</p>
+            <p>21 March 2025</p>
+            </div>
+            <div>
+              <button class="btn btn-active btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="mr-8 mt-12">
+          <p class="btn btn-neutral btn-outline">SwiftPay</p>
+          <h1 class="mt-3">Optimize  Home page</h1>
+          <p class="mt-3">Debug using Chrome <br> DevTools, check for <br> overlapping elements</p>
+          <div class="flex mt-3">
+            <div class="mr-4">
+              <p>Deadline</p>
+            <p>21 March 2025</p>
+            </div>
+            <div>
+              <button class="btn btn-active btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="flex">
+        <!-- Second Row Section -->
+        <div class="mr-8 mt-12">
+          <p class="btn btn-neutral btn-outline">Meta</p>
+          <h1 class="mt-3">Add new emoji 🤲</h1>
+          <p class="mt-3">Debug using Chrome <br> DevTools, check for <br> overlapping elements</p>
+          <div class="flex mt-3">
+            <div class="mr-4">
+              <p>Deadline</p>
+            <p>21 March 2025</p>
+            </div>
+            <div>
+              <button class="btn btn-active btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="mr-8 mt-12">
+          <p class="btn btn-neutral btn-outline">Google LLC</p>
+          <h1 class="mt-3">Integrate OpenAI API </h1>
+          <p class="mt-3">Debug using Chrome <br> DevTools, check for <br> overlapping elements</p>
+          <div class="flex mt-3">
+            <div class="mr-4">
+              <p>Deadline</p>
+            <p>21 March 2025</p>
+            </div>
+            <div>
+              <button class="btn btn-active btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="mr-8 mt-12">
+          <p class="btn btn-neutral btn-outline">Glassdoar</p>
+          <h1 class="mt-3">Improve Job searching </h1>
+          <p class="mt-3">Debug using Chrome <br> DevTools, check for <br> overlapping elements</p>
+          <div class="flex mt-3">
+            <div class="mr-4">
+              <p>Deadline</p>
+            <p>21 March 2025</p>
+            </div>
+            <div>
+              <button class="btn btn-active btn-primary">Completed</button>
+            </div>
+          </div>
+        </div>
+       </div>
+
+    </div>
+
+  </div>
+  <div>
+<!-- Activity log -->
+ <div class="ml-15">
+  <div class="flex items-center ">
+    <img src="assets/activity.png" alt="">
+    <p class="font-bold">Activity Log</p>
+  </div>
+  <div id="history-container" class="mt-5">
+    <button id="btn-history" class="btn btn-primary">Clear History</button>
+  </div>
+  <div>
+
+  </div>
+  </div>
+
+</div>
+
+
+ </div>
+
+</div>
+
+
+     <script src="script.js"></script>
+</body>
+</html>
+
